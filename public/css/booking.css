@@ -1,0 +1,46 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    margin: 0;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    width: 270px;
+    height: 28px;
+}
+
+input[type=date] {
+    width: 135px;
+}
+
+.test {
+    background-color: red;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.check-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.check-in input {
+    width: initial;
+}

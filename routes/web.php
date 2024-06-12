@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\BookingController;
+use App\Http\Controllers\KamarController;
+use App\Http\Controllers\TipeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+
+Route::get('/booking', [BookingController::class, "showBooking"]);
+Route::post('/booking', [BookingController::class, "postBooking"]);
+
+
+Route::get('/check-in', function () {
+    return view('checkin');
+});
+
+Route::get('/nota', function () {
+    return view('nota');
+});
+
+// admin
+
+Route::get('/admin', function () {
+    return view('admin/adminHome');
+});
+
+Route::get('/tambahKamar', [KamarController::class, "showTambahKamar"]);
+Route::post('/tambahKamar', [KamarController::class, "postKamar"]);
+
+Route::get('/tambahTipe', [TipeController::class, "showTambahTipe"]);
+Route::post('/tambahTipe', [TipeController::class, "postTipeKamar"]);
+
+

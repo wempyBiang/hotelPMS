@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 40vw;
+    border: 2px black solid;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    text-align: center;
+    height: fit-content;
+}
+
+input {
+    height: fit-content;
+    width: fit-content;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    margin-bottom: 15px;
+}

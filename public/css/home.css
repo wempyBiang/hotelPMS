@@ -1,0 +1,27 @@
+td {
+    min-width: 80px;
+    text-align: center;
+}
+
+
+.rooms:first-child{
+    margin-top: 10px;
+}
+
+.room {
+    overflow-x: scroll;
+    margin-bottom: 35px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,25 @@
+.rooms {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.content {
+    padding-top: 20px;
+}
+
+.types {
+    margin-top: 40px;
+}
+
+.type {
+    margin-bottom: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}

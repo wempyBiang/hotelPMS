@@ -1,0 +1,118 @@
+.content {
+    width: 21cm;
+    height: 29.7cm;
+    /* background-color: salmon; */
+    margin: 0;
+}
+
+.nota {
+    padding: 50px 50px 0 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 130px;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    font-size: 62px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    width: 14rem;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: right;
+    line-height: 95%;
+}
+
+.logo img {
+    width: 90px;
+}
+
+hr {
+    border-top: 1px solid #000;
+}
+
+.keterangan {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 130px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item p{
+    font-size: 19px;
+}
+
+.right {
+    text-align: right;
+}
+
+.justify-content-end{
+    justify-content: end;
+}
+
+.transaksi{
+    background-color: white;
+}
+
+.transaksi table  {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.transaksi th, td{
+    text-transform: uppercase;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.transaksi th {
+    font-size: 18px;
+    padding-bottom: 20px;
+
+}
+
+.transaksi td {
+    background-color: #d8d8d8;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: solid 1px black;
+    margin-bottom: 50px;
+}
+
+.footer {
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.footer .row:last-child{
+    margin-top: 45px;
+    font-weight: bold;
+}
+
+.footer .row:last-child .item:first-child {
+    width: 17rem;
+}
+
+.footer .row:last-child .item:last-child {
+    height: 190px;
+    border-bottom: solid 2px black;
+}
