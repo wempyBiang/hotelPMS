@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\KamarController;
+use App\Http\Controllers\NotaController;
 use App\Http\Controllers\TipeController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,9 +30,8 @@ Route::get('/check-in', function () {
     return view('checkin');
 });
 
-Route::get('/nota', function () {
-    return view('nota');
-});
+Route::get('/nota', [NotaController::class, "show"]);
+Route::post('/nota', [NotaController::class, "printNota"]);
 
 // admin
 
