@@ -8,7 +8,10 @@ use Illuminate\Http\Request;
 class TipeController extends Controller
 {
     public function showTambahTipe () {
-        return view('admin/tambahTipe');
+        $tipeKamar = TipeKamarModel::all();
+        return view('admin/tambahTipe', [
+            "tipeKamar" => $tipeKamar
+        ]);
     }
 
     public function postTipeKamar(Request $req){

@@ -8,7 +8,26 @@
     <div class="button">
         <a href="/admin">Home</a>
     </div>
+
+    
     <form action="/tambahTipe" method="post">
+        <div class="table-edit">
+
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Harga</th>
+                    <th>Edit</th>
+                </tr>
+                @foreach ($tipeKamar as $tipe)
+                    <tr>
+                        <td>{{{$tipe->nama}}}</td>
+                        <td>Rp. {{{number_format($tipe->harga, 0, ",", ".")}}}</td>
+                        <td><a href="#">Test</a></td>
+                    </tr>               
+                @endforeach
+            </table>
+        </div>
         @csrf
         <div>
             <label for="nama">Nama</label>
