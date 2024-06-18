@@ -28,13 +28,13 @@
                 </div>
             </div>
 
-            <div class="row justify-content-end">
+            {{-- <div class="row justify-content-end">
                 
                 <div class="item right">
                     <p>No. Invoice:</p>
                     <p><input type="text" name="noInvoice" id="noInvoice" placeholder="1 01/01/2024"></p>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="transaksi">

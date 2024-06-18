@@ -26,13 +26,13 @@
                 </div>
             </div>
 
-            <div class="row justify-content-end">
+            {{-- <div class="row justify-content-end">
                 
                 <div class="item right">
                     <p>No. Invoice:</p>
                     <p>{{$noInvoice}}</p>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="transaksi">
