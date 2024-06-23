@@ -45,4 +45,7 @@ Route::post('/tambahKamar', [KamarController::class, "postKamar"]);
 Route::get('/tambahTipe', [TipeController::class, "showTambahTipe"]);
 Route::post('/tambahTipe', [TipeController::class, "postTipeKamar"]);
 
+Route::post('/edit-tipe-kamar-{id}', [TipeController::class, "editTipeKamar"]);
+
+
 

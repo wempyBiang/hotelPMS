@@ -9,10 +9,8 @@
         <a href="/admin">Home</a>
     </div>
 
-    
-    <form action="/tambahTipe" method="post">
+    <div class="form">
         <div class="table-edit">
-
             <table>
                 <tr>
                     <th>Nama</th>
@@ -21,22 +19,29 @@
                 </tr>
                 @foreach ($tipeKamar as $tipe)
                     <tr>
-                        <td>{{{$tipe->nama}}}</td>
-                        <td>Rp. {{{number_format($tipe->harga, 0, ",", ".")}}}</td>
-                        <td><a href="#">Test</a></td>
+                        <form action="/edit-tipe-kamar-{{$tipe->id}}" method="post">
+                            @csrf
+                            <td><input type="text" name="nama" id="nama" value="{{{$tipe->nama}}}"></td>
+                            <td><input type="number" name="harga" id="harga" value="{{{$tipe->harga}}}"></td>
+                            <td><input type="submit" value="Edit"></td>
+                        </form>
                     </tr>               
                 @endforeach
             </table>
         </div>
-        @csrf
-        <div>
-            <label for="nama">Nama</label>
-            <input type="text" name="nama" id="nama">
-        </div>
-        <div>
-            <label for="harga">Harga</label>
-            <input type="number" name="harga" id="harga">
-        </div>
-        <input type="submit" value="Tambah" class="span-col-2">
-    </form>
+
+        <form action="/tambahTipe" method="post">
+            @csrf
+            <div>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+            <div>
+                <label for="harga">Harga</label>
+                <input type="number" name="harga" id="harga">
+            </div>
+            <input type="submit" value="Tambah" class="span-col-2">
+        </form>
+    </div>
+    
 @endsection

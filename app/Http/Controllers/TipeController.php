@@ -24,4 +24,13 @@ class TipeController extends Controller
         return redirect()->back();
 
     }
+
+    public function editTipeKamar($id, Request $req){
+        $tipeKamar = TipeKamarModel::where("id", $id)->first();
+        $tipeKamar->nama = $req->nama;
+        $tipeKamar->harga = $req->harga;
+        $tipeKamar->save();
+        
+        return redirect()->back();
+    }
 }
