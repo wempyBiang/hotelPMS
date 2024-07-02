@@ -17,8 +17,8 @@ return new class extends Migration
             $table->foreign("kamar")->references("id")->on("kamar");
             $table->string("nama");
             $table->string("alamat");
-            $table->boolean("check-in");
-            $table->boolean("check-out");
+            $table->boolean("check_in");
+            $table->boolean("check_out");
             $table->date("tgl_masuk");
             $table->date("tgl_keluar");
             $table->float("bayar");

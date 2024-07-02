@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\HomeContoller;
 use App\Http\Controllers\KamarController;
 use App\Http\Controllers\NotaController;
 use App\Http\Controllers\TipeController;
@@ -17,9 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeContoller::class, "show"]);
 
 
 Route::get('/booking', [BookingController::class, "showBooking"]);

@@ -48,13 +48,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="kamar[]" id="kamar1">
-                            <option value="-">-</option>
-                            <option value="STANDARD">STANDARD</option>
-                            <option value="DELUX">DELUX</option>
-                            <option value="TONGKONAN ATAS">TONGKONAN ATAS</option>
-                            <option value="TONGKONAN BAWAH">TONGKONAN BAWAH</option>
-                        </select>
+                        <input type="text" name="kamar[]" id="kamar1">
                     </td>
                     <td><input type="text" name="harga[]" id="harga1" placeholder="300.000"></td>
                     <td><input type="text" name="checkin[]" id="checkin1" placeholder="01/01/2024"></td>
@@ -63,13 +57,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="kamar[]" id="kamar2">
-                            <option value="-">-</option>
-                            <option value="STANDARD">STANDARD</option>
-                            <option value="DELUX">DELUX</option>
-                            <option value="TONGKONAN ATAS">TONGKONAN ATAS</option>
-                            <option value="TONGKONAN BAWAH">TONGKONAN BAWAH</option>
-                        </select>
+                        <input type="text" name="kamar[]" id="kamar2">
                     </td>
                     <td><input type="text" name="harga[]" id="harga2" placeholder="harga"></td>
                     <td><input type="text" name="checkin[]" id="checkin2" placeholder="tanggal check-in"></td>
@@ -78,13 +66,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="kamar[]" id="kamar3">
-                            <option value="-">-</option>
-                            <option value="STANDARD">STANDARD</option>
-                            <option value="DELUX">DELUX</option>
-                            <option value="TONGKONAN ATAS">TONGKONAN ATAS</option>
-                            <option value="TONGKONAN BAWAH">TONGKONAN BAWAH</option>
-                        </select>
+                        <input type="text" name="kamar[]" id="kamar3">
                     </td>
                     <td><input type="text" name="harga[]" id="harga3" placeholder="harga"></td>
                     <td><input type="text" name="checkin[]" id="checkin3" placeholder="tanggal check-in"></td>
@@ -93,13 +75,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="kamar[]" id="kamar4">
-                            <option value="-">-</option>
-                            <option value="STANDARD">STANDARD</option>
-                            <option value="DELUX">DELUX</option>
-                            <option value="TONGKONAN ATAS">TONGKONAN ATAS</option>
-                            <option value="TONGKONAN BAWAH">TONGKONAN BAWAH</option>
-                        </select>
+                        <input type="text" name="kamar[]" id="kamar4">
                     </td>
                     <td><input type="text" name="harga[]" id="harga4" placeholder="harga"></td>
                     <td><input type="text" name="checkin[]" id="checkin4" placeholder="tanggal check-in"></td>
@@ -108,13 +84,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="kamar[]" id="kamar5">
-                            <option value="-">-</option>
-                            <option value="STANDARD">STANDARD</option>
-                            <option value="DELUX">DELUX</option>
-                            <option value="TONGKONAN ATAS">TONGKONAN ATAS</option>
-                            <option value="TONGKONAN BAWAH">TONGKONAN BAWAH</option>
-                        </select>
+                        <input type="text" name="kamar[]" id="kamar5">
                     </td>
                     <td><input type="text" name="harga[]" id="harga5" placeholder="harga"></td>
                     <td><input type="text" name="checkin[]" id="checkin5" placeholder="tanggal check-in"></td>
@@ -123,13 +93,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="kamar[]" id="kamar6">
-                            <option value="-">-</option>
-                            <option value="STANDARD">STANDARD</option>
-                            <option value="DELUX">DELUX</option>
-                            <option value="TONGKONAN ATAS">TONGKONAN ATAS</option>
-                            <option value="TONGKONAN BAWAH">TONGKONAN BAWAH</option>
-                        </select>
+                        <input type="text" name="kamar[]" id="kamar6">
                     </td>
                     <td><input type="text" name="harga[]" id="harga6" placeholder="harga"></td>
                     <td><input type="text" name="checkin[]" id="checkin6" placeholder="tanggal check-in"></td>
@@ -138,13 +102,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <select name="kamar[]" id="kamar7">
-                            <option value="-">-</option>
-                            <option value="STANDARD">STANDARD</option>
-                            <option value="DELUX">DELUX</option>
-                            <option value="TONGKONAN ATAS">TONGKONAN ATAS</option>
-                            <option value="TONGKONAN BAWAH">TONGKONAN BAWAH</option>
-                        </select>
+                        <input type="text" name="kamar[]" id="kamar7">
                     </td>
                     <td><input type="text" name="harga[]" id="harga7" placeholder="harga"></td>
                     <td><input type="text" name="checkin[]" id="checkin7" placeholder="tanggal check-in"></td>

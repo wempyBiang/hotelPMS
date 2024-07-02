@@ -3,6 +3,13 @@ td {
     text-align: center;
 }
 
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: solid black 1px;
+}
 
 .rooms:first-child{
     margin-top: 10px;
@@ -19,6 +26,7 @@ td {
 
 .title {
     font-size: 28px;
+    text-transform: capitalize;
 }
 
 .buttons {

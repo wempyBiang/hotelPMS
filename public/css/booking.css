@@ -23,8 +23,9 @@ input[type=date] {
     width: 135px;
 }
 
-.test {
-    background-color: red;
+.buttons {
+    display: flex;
+    gap: 15px;
 }
 
 form {
