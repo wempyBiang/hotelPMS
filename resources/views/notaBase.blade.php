@@ -48,15 +48,15 @@
                   $totalHarga = 0  
                 @endphp
                 @for ($i = 0; $i < count($kamars); $i++)
-                    @if ($kamars[$i] != "-")
+                    @if ($kamars[$i] != null)
                         <tr>
                             <td>{{$kamars[$i]}}</td>
-                            <td>Rp. {{$hargas[$i]}}</td>
+                            <td>Rp {{number_format($hargas[$i], 0, ",", ".")}}</td>
                             <td>{{$checkins[$i]}}</td>
                             <td>{{$checkouts[$i]}}</td>
-                            <td>Rp. {{$totals[$i]}}</td>
+                            <td>Rp {{number_format($totals[$i], 0, ",", ".")}}</td>
                             @php
-                              $totalHarga = ((int) $totals[$i] * 1000) + $totalHarga  
+                              $totalHarga = ((int) $totals[$i]) + $totalHarga  
                             @endphp
                         </tr>
                     @else
