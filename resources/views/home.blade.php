@@ -55,5 +55,8 @@
         <div class="button">
             <a href="/nota">Nota</a>
         </div>
+        <div class="button">
+            <a href="/nota2">Nota</a>
+        </div>
     </div>
 @endsection

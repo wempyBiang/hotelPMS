@@ -30,7 +30,9 @@ Route::get('/check-in', function () {
 });
 
 Route::get('/nota', [NotaController::class, "show"]);
+Route::get('/nota2', [NotaController::class, "show2"]);
 Route::post('/nota', [NotaController::class, "printNota"]);
+Route::post('/nota2', [NotaController::class, "printNota2"]);
 
 // admin
 
