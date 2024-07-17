@@ -14,6 +14,10 @@ class NotaController extends Controller
         return view("notaForm2");
     }
 
+    public function show3() {
+        return view("notaForm3");
+    }
+
     public function printNota(Request $req) {
         $nama = $req->nama;
         $tanggalNota = $req->tanggalNota;
@@ -53,6 +57,31 @@ class NotaController extends Controller
             "nama" => $nama,
             "tanggalNota" => $tanggalNota,
             "noInvoice" => $noInvoice,
+            "keterangans" => $keterangan,
+            "jumlahs" => $jumlah,
+            "hargas" => $harga,
+            "totals" => $total,
+        ]);
+
+
+    }
+
+    public function printNota3(Request $req) {
+        $nama = $req->nama;
+        $tanggalNota = $req->tanggalNota;
+        $noInvoice = $req->noInvoice;
+
+        $tanggal = $req->tanggal;
+        $keterangan = $req->keterangan;
+        $harga = $req->harga;
+        $jumlah = $req->jumlah;
+        $total = $req->total;
+ 
+        return view("notaBase3", [
+            "nama" => $nama,
+            "tanggalNota" => $tanggalNota,
+            "noInvoice" => $noInvoice,
+            "tanggals" => $tanggal,
             "keterangans" => $keterangan,
             "jumlahs" => $jumlah,
             "hargas" => $harga,

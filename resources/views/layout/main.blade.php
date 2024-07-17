@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
     @yield("css")
+    @yield("title")
     <title>Hotel Manggasa</title>
 </head>
 <body>

@@ -42,6 +42,7 @@
         <div class="transaksi">
             <table>
                 <tr>
+                    <th>tanggal</th>
                     <th>keterangan</th>
                     <th>jumlah</th>
                     <th>harga</th>
@@ -53,6 +54,7 @@
                 @for ($i = 0; $i < count($keterangans); $i++)
                     @if ($keterangans[$i] != null)
                         <tr>
+                            <td>{{$tanggals[$i]}}</td>
                             <td>{{$keterangans[$i]}}</td>
                             <td>{{$jumlahs[$i]}}</td>
                             <td>Rp {{number_format($hargas[$i], 0, ",", ".")}}</td>
@@ -63,6 +65,7 @@
                         </tr>
                     @else
                         <tr>
+                            <td class="non-border"></td>
                             <td class="non-border"></td>
                             <td class="non-border"></td>
                             <td class="non-border"></td>
