@@ -82,7 +82,7 @@
                     <p>pembayaran</p>
                     <div class="item">
                         <p>transfer:</p>
-                        <p>BNI: 1010671016</p>
+                        <p>BNI: 0280373129</p>
                         <p>a/n leni biang</p>
                     </div>
                 </div>
