@@ -1,5 +1,9 @@
 @extends("layout.main")
 
+@section('title')
+    <title>Invoice - {{$nama}} - {{$tanggalNota}}</title>
+@endsection
+
 @section('css')
     <link rel="stylesheet" href="css/nota.css">
 @endsection
