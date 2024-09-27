@@ -28,6 +28,7 @@ class NotaController extends Controller
         $checkins = $req->checkin;
         $checkouts = $req->checkout;
         $totals = $req->total;
+        $pembayaran = $req->pembayaran;
 
         return view("notaBase", [
             "nama" => $nama,
@@ -37,7 +38,8 @@ class NotaController extends Controller
             "hargas" => $hargas,
             "checkins" => $checkins,
             "checkouts" => $checkouts,
-            "totals" => $totals
+            "totals" => $totals,
+            "pembayaran" => $pembayaran
         ]);
 
 

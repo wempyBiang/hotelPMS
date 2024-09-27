@@ -6,13 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class BookingModel extends Model
+class OccupancyModel extends Model
 {
     use HasFactory;
 
-    protected $table = "booking";
+    protected $table = "occupancy";
 
-    public function kamarForeign(): BelongsTo {
-        return $this->belongsTo(KamarModel::class, "kamar");
+    public function tipeKamar(): BelongsTo {
+        return $this->belongsTo(TipeKamarModel::class, "tipe_kamar");
     }
 }

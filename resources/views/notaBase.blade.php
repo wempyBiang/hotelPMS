@@ -26,7 +26,7 @@
                 </div>
                 <div class="item right">
                     <p>Tanggal:</p>
-                    <p>{{$tanggalNota}}</p>
+                    <p>{{DateTime::createFromFormat('Y-m-d', $tanggalNota)->format('d M Y')}}</p>
                 </div>
             </div>
 
@@ -56,8 +56,8 @@
                         <tr>
                             <td>{{$kamars[$i]}}</td>
                             <td>Rp {{number_format($hargas[$i], 0, ",", ".")}}</td>
-                            <td>{{$checkins[$i]}}</td>
-                            <td>{{$checkouts[$i]}}</td>
+                            <td>{{DateTime::createFromFormat('Y-m-d', $checkins[$i])->format('d/m/Y')}}</td>
+                            <td>{{DateTime::createFromFormat('Y-m-d', $checkouts[$i])->format('d/m/Y')}}</td>
                             <td>Rp {{number_format($totals[$i], 0, ",", ".")}}</td>
                             @php
                               $totalHarga = ((int) $totals[$i]) + $totalHarga  
@@ -84,9 +84,13 @@
                 <div class="item">
                     <p>pembayaran</p>
                     <div class="item">
-                        <p>transfer:</p>
-                        <p>BNI: 1010671016</p>
-                        <p>a/n leni biang</p>
+                        @if ($pembayaran!="Cash")
+                            <p>transfer:</p>
+                            <p>{{$pembayaran}}</p>
+                            <p>a/n leni biang</p>
+                        @else
+                            <p>{{$pembayaran}}</p>
+                        @endif
                     </div>
                 </div>
 

@@ -24,7 +24,7 @@
                 </div>
                 <div class="item right">
                     <p>Tanggal:</p>
-                    <p><input type="text" name="tanggalNota" id="tanggalNota" placeholder="Rabu, 8 Maret 2024"></p>
+                    <p><input type="date" name="tanggalNota" id="tanggalNota" placeholder="Rabu, 8 Maret 2024"></p>
                 </div>
             </div>
 
@@ -51,8 +51,8 @@
                         <input type="text" name="kamar[]" id="kamar1">
                     </td>
                     <td><input type="text" name="harga[]" id="harga1" placeholder="300.000"></td>
-                    <td><input type="text" name="checkin[]" id="checkin1" placeholder="01/01/2024"></td>
-                    <td><input type="text" name="checkout[]" id="checkout1" placeholder="02/01/2024"></td>
+                    <td><input type="date" name="checkin[]" id="checkin1" placeholder="01/01/2024"></td>
+                    <td><input type="date" name="checkout[]" id="checkout1" placeholder="02/01/2024"></td>
                     <td><input type="text" name="total[]" id="total1" placeholder="300.000"></td>
                 </tr>
                 <tr>
@@ -60,8 +60,8 @@
                         <input type="text" name="kamar[]" id="kamar2">
                     </td>
                     <td><input type="text" name="harga[]" id="harga2" placeholder="harga"></td>
-                    <td><input type="text" name="checkin[]" id="checkin2" placeholder="tanggal check-in"></td>
-                    <td><input type="text" name="checkout[]" id="checkout2" placeholder="tanggal check-out"></td>
+                    <td><input type="date" name="checkin[]" id="checkin2" placeholder="tanggal check-in"></td>
+                    <td><input type="date" name="checkout[]" id="checkout2" placeholder="tanggal check-out"></td>
                     <td><input type="text" name="total[]" id="total2" placeholder="total"></td>
                 </tr>
                 <tr>
@@ -69,8 +69,8 @@
                         <input type="text" name="kamar[]" id="kamar3">
                     </td>
                     <td><input type="text" name="harga[]" id="harga3" placeholder="harga"></td>
-                    <td><input type="text" name="checkin[]" id="checkin3" placeholder="tanggal check-in"></td>
-                    <td><input type="text" name="checkout[]" id="checkout3" placeholder="tanggal check-out"></td>
+                    <td><input type="date" name="checkin[]" id="checkin3" placeholder="tanggal check-in"></td>
+                    <td><input type="date" name="checkout[]" id="checkout3" placeholder="tanggal check-out"></td>
                     <td><input type="text" name="total[]" id="total3" placeholder="total"></td>
                 </tr>
                 <tr>
@@ -78,8 +78,8 @@
                         <input type="text" name="kamar[]" id="kamar4">
                     </td>
                     <td><input type="text" name="harga[]" id="harga4" placeholder="harga"></td>
-                    <td><input type="text" name="checkin[]" id="checkin4" placeholder="tanggal check-in"></td>
-                    <td><input type="text" name="checkout[]" id="checkout4" placeholder="tanggal check-out"></td>
+                    <td><input type="date" name="checkin[]" id="checkin4" placeholder="tanggal check-in"></td>
+                    <td><input type="date" name="checkout[]" id="checkout4" placeholder="tanggal check-out"></td>
                     <td><input type="text" name="total[]" id="total4" placeholder="total"></td>
                 </tr>
                 <tr>
@@ -87,8 +87,8 @@
                         <input type="text" name="kamar[]" id="kamar5">
                     </td>
                     <td><input type="text" name="harga[]" id="harga5" placeholder="harga"></td>
-                    <td><input type="text" name="checkin[]" id="checkin5" placeholder="tanggal check-in"></td>
-                    <td><input type="text" name="checkout[]" id="checkout5" placeholder="tanggal check-out"></td>
+                    <td><input type="date" name="checkin[]" id="checkin5" placeholder="tanggal check-in"></td>
+                    <td><input type="date" name="checkout[]" id="checkout5" placeholder="tanggal check-out"></td>
                     <td><input type="text" name="total[]" id="total5" placeholder="total"></td>
                 </tr>
                 <tr>
@@ -96,8 +96,8 @@
                         <input type="text" name="kamar[]" id="kamar6">
                     </td>
                     <td><input type="text" name="harga[]" id="harga6" placeholder="harga"></td>
-                    <td><input type="text" name="checkin[]" id="checkin6" placeholder="tanggal check-in"></td>
-                    <td><input type="text" name="checkout[]" id="checkout6" placeholder="tanggal check-out"></td>
+                    <td><input type="date" name="checkin[]" id="checkin6" placeholder="tanggal check-in"></td>
+                    <td><input type="date" name="checkout[]" id="checkout6" placeholder="tanggal check-out"></td>
                     <td><input type="text" name="total[]" id="total6" placeholder="total"></td>
                 </tr>
                 <tr>
@@ -105,8 +105,8 @@
                         <input type="text" name="kamar[]" id="kamar7">
                     </td>
                     <td><input type="text" name="harga[]" id="harga7" placeholder="harga"></td>
-                    <td><input type="text" name="checkin[]" id="checkin7" placeholder="tanggal check-in"></td>
-                    <td><input type="text" name="checkout[]" id="checkout7" placeholder="tanggal check-out"></td>
+                    <td><input type="date" name="checkin[]" id="checkin7" placeholder="tanggal check-in"></td>
+                    <td><input type="date" name="checkout[]" id="checkout7" placeholder="tanggal check-out"></td>
                     <td><input type="text" name="total[]" id="total7" placeholder="total"></td>
                 </tr>
                 
@@ -118,8 +118,11 @@
                 <div class="item">
                     <p>pembayaran</p>
                     <div class="item">
-                        <p>transfer:</p>
-                        <p>BNI: 1010671016</p>
+                        <p><input type="radio" name="pembayaran" id="cash" value="Cash"> <label for="cash">Cash</label></p>
+                        {{-- <p>transfer:</p> --}}
+                        <p><input type="radio" name="pembayaran" id="mandiri" value="MANDIRI 1700010106767"> <label for="mandiri">MANDIRI 1700010106767</label></p>
+                        <p><input type="radio" name="pembayaran" id="bni" value="BNI: 0280373129"> <label for="bni">BNI: 0280373129</label></p>
+                        <p><input type="radio" name="pembayaran" id="bri" value="BRI: 023201049559502"> <label for="bri">BRI: 023201049559502</label></p>
                         <p>a/n leni biang</p>
                     </div>
                 </div>

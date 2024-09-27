@@ -23,6 +23,7 @@ class KamarController extends Controller
             $kamar = new KamarModel();
             $kamar->tipe = $req->tipe;
             $kamar->nomor = $nomor;
+            $kamar->terisi = false;
             $kamar->save();
         }
 

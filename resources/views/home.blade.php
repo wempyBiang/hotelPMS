@@ -6,30 +6,40 @@
 
 @section('content')
     <div class="rooms">
-        @foreach ($tipes as $tipe)
+        @foreach ($tipeKamars as $tipe)
             <div class="room">
                 <div class="title">{{{$tipe->nama}}}</div>
                 <div class="table">
                     <table>
                         <tr>
                             <td>Tanggal</td>
-                            <td>11/5/2024</td>
-                            <td>11/5/2024</td>
-                            <td>11/5/2024</td>
+                            @foreach ($dates as $date)
+                                <td>{{{$date}}}</td>
+                            @endforeach
                         </tr>
 
                         <tr>
                             <td>Terisi</td>
-                            <td>5</td>
-                            <td>4</td>
-                            <td>4</td>
+                            @foreach ($dates as $date)
+                                @isset($sisa[$tipe->nama][$date])
+                                    <td>{{{$sisa[$tipe->nama][$date]}}}</td>
+                                @else
+                                    <td>0</td>
+                                @endisset
+                                
+                            @endforeach
                         </tr>
 
                         <tr>
                             <td>Sisa</td>
-                            <td>5</td>
-                            <td>5</td>
-                            <td>5</td>
+                            @foreach ($dates as $date)
+                                @isset($sisa[$tipe->nama][$date])
+                                    <td>{{{$jmlKamar[$tipe->nama]-$sisa[$tipe->nama][$date]}}}</td>
+                                @else
+                                    <td>{{{$jmlKamar[$tipe->nama]}}}</td>
+                                @endisset
+                                
+                            @endforeach
                         </tr>
                     </table>
                 </div>
