@@ -13,8 +13,8 @@
         <div class="header">
           <h1>invoice</h1>
           <div class="logo">
-            <h1>hotel manggasa</h1>
-            <img src="img/logo.png" alt="logo">
+            {{-- <h1>hotel manggasa</h1> --}}
+            <img src="img/lallangan.png" alt="logo">
           </div>
         </div>
         <hr>
@@ -102,7 +102,7 @@
             <div class="row">
                 <div class="item"><p>terima kasih atas kunjungannya</p></div>
                 <div class="item">
-                    <p>management hotel manggasa</p>
+                    <p>management hotel lallangan</p>
                 </div>
             </div>
         </div>
