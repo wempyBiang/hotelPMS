@@ -26,7 +26,7 @@
                 </div>
                 <div class="item right">
                     <p>Tanggal:</p>
-                    <p>{{$tanggalNota}}</p>
+                    <p>{{DateTime::createFromFormat('Y-m-d', $tanggalNota)->format('d M Y')}}</p>
                 </div>
             </div>
 

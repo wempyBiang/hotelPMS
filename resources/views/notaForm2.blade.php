@@ -24,7 +24,7 @@
                 </div>
                 <div class="item right">
                     <p>Tanggal:</p>
-                    <p><input type="text" name="tanggalNota" id="tanggalNota" placeholder="Rabu, 8 Maret 2024"></p>
+                    <p><input type="date" name="tanggalNota" id="tanggalNota" placeholder="Rabu, 8 Maret 2024"></p>
                 </div>
             </div>
 
